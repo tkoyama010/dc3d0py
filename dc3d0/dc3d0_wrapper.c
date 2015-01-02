@@ -25,4 +25,12 @@ float uz(float alpha, float x, float y, float z, float depth, float dip, float p
   &ux, &uy, &uz, &uxx, &uyx, &uzx, &uxy, &uyy, &uzy, &uxz, &uyz, &uzz, &iret);
   return uz;
 }
+int iret(float alpha, float x, float y, float z, float depth, float dip, float pot1, float pot2, float pot3, float pot4)
+{
+  float ux, uy, uz, uxx, uyx, uzx, uxy, uyy, uzy, uxz, uyz, uzz;
+  int iret;
+  dc3d0_(&alpha, &x, &y, &z, &depth, &dip, &pot1, &pot2, &pot3, &pot4,
+  &ux, &uy, &uz, &uxx, &uyx, &uzx, &uxy, &uyy, &uzy, &uxz, &uyz, &uzz, &iret);
+  return iret;
+}
 
